@@ -2,12 +2,18 @@
 //  ViewController.swift
 //  NibhaMaharjan_MAPD714_Assign1
 //
+//  * File name: NibhaMaharjan_MAPD714_Assign1
+//  * Name: Nibha Maharjan
+//  * Student Number: 301282952
+//  * Date completed: Sep 19th 2023
+//  * App info: Simple app with UI to determine Interest and Total amount by taking Principle, ROI and time as Input from the user
+//
 //  Created by nibha maharjan on 2023-09-17.
 //
 
 import UIKit
 
-//Initializing variables
+//Initializing variables for calculations
 var calc = Double()
 var sum = Double()
 var totl = Double()
@@ -17,7 +23,7 @@ var rnum = Double()
 
 class ViewController: UIViewController {
 
-    //Connecting UI Elements
+    //Declaring UI Elements
     @IBOutlet weak var myPrincipal: UITextField!
     @IBOutlet weak var myTime: UITextField!
     @IBOutlet weak var myRoi: UITextField!
@@ -32,7 +38,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    //Button Click Event Calculations
+    //Button Click Event Calculations to calculate Interest and Total amount
     @IBAction func interestCalculate(_ sender: Any) {
         
         //Storing inputs into variables as Double Datatype
@@ -55,10 +61,10 @@ class ViewController: UIViewController {
         
     }
     
-    //Clear button click event
+    //Clear button click event as requested by the question
     @IBAction func clearAction(_ sender: Any) {
-        calcAnswer.text = ""
-        totalAmount.text = ""
+        calcAnswer.text = "0"
+        totalAmount.text = "0"
         myPrincipal.text = ""
         myTime.text = ""
         myRoi.text = ""
